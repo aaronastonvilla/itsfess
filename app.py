@@ -21,20 +21,20 @@ def start():
                             if dms[i]['media'] is None:
                                 print("DM will be posted")
                                 tw.post_tweet(message)
-                                tw.delete_dm(id)
+                                #tw.delete_dm(id)
                             else:
                                 print("DM will be posted with media!")
                                 tw.post_tweet_with_media(message, dms[i]['media'])
-                                tw.delete_dm(id)
+                                #tw.delete_dm(id)
 
                         else:
                             print("DM deleted because it's an empty message")
-                            tw.delete_dm(id)
+                            #tw.delete_dm(id)
 
 
                     else:
                         print("DM will be deleted, no keyword detected!")
-                        tw.delete_dm(id)
+                        #tw.delete_dm(id)
 
             dms = list()
 
