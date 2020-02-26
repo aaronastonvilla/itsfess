@@ -1,7 +1,6 @@
 from twitter import Twitter
 import time
 
-#test it
 tw = Twitter()
 
 def start():
