@@ -28,13 +28,13 @@ def start():
 
                         else:
                             print("DM deleted because it's an empty message")
-                            tw.read_dm() #test
+                            #tw.read_dm() 
                             tw.delete_dm(id)
 
 
                     else:
                         print("DM will be deleted, no keyword detected!")
-                        tw.read_dm() #test
+                        #tw.read_dm()
                         tw.delete_dm(id)
 
             dms = list()
