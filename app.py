@@ -2,6 +2,7 @@ from twitter import Twitter
 import time
 
 tw = Twitter()
+botid = 1214915482702114816
 
 def start():
     print("Starting program...")
@@ -13,7 +14,7 @@ def start():
                 sender_id = dms[i]['sender_id']
                 id = dms[i]['id']
 
-                if len(message) is not 0 and len(message) < 280:
+                if len(message) is not 0 and len(message) < 280 and sender_id is not botid:
                     if "tweetindong" in message:
                         message = message.replace("tweetindong", "its/")
                         if len(message) is not 0:
