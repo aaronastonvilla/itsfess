@@ -2,7 +2,7 @@ from twitter import Twitter
 import time
 
 tw = Twitter()
-botid = 1214915482702114816
+botid = '1214915482702114816'
 
 def start():
     print("Starting program...")
