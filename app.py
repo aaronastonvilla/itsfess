@@ -14,7 +14,7 @@ def start():
                 sender_id = dms[i]['sender_id']
                 id = dms[i]['id']
 
-                if len(message) is not 0 and len(message) < 280 and sender_id != botid:
+                if len(message) is not 0 and len(message) < 280:
                     if "tweetindong" in message:
                         message = message.replace("tweetindong", "its/")
                         if len(message) is not 0:
